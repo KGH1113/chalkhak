@@ -8,14 +8,35 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var authManager: AuthManager
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            if authManager.isAuthenticated {
+                HomeView()
+            } else {
+                if (
+                    KeychainService.shared.retrive(key: "ACCESS_TOKEN") == nil ||
+                    KeychainService.shared.retrive(key: "REFRESH_TOKEN") == nil
+                ) {
+                    GetStartedView()
+                } else {
+                    LoginView()
+                }
+            }
         }
-        .padding()
+        .onAppear {
+            AuthService.shared.protectedRoute() { result in
+                DispatchQueue.main.async {
+                    switch result {
+                    case .success:
+                        authManager.isAuthenticated = true
+                    case .failure:
+                        authManager.isAuthenticated = false
+                    }
+                }
+            }
+        }
     }
 }
 

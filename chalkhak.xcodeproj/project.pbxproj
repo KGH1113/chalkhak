@@ -29,9 +29,22 @@
 		D6D91BB12D3457A20090645E /* chalkhakUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chalkhakUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		D6E4F81A2D39C9C3002D0572 /* Exceptions for "chalkhak" folder in "chalkhak" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = D6D91B962D3457A10090645E /* chalkhak */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		D6D91B992D3457A10090645E /* chalkhak */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D6E4F81A2D39C9C3002D0572 /* Exceptions for "chalkhak" folder in "chalkhak" target */,
+			);
 			path = chalkhak;
 			sourceTree = "<group>";
 		};
@@ -78,6 +91,7 @@
 				D6D91B992D3457A10090645E /* chalkhak */,
 				D6D91BAA2D3457A20090645E /* chalkhakTests */,
 				D6D91BB42D3457A20090645E /* chalkhakUITests */,
+				D6E4F81D2D39CE6E002D0572 /* Frameworks */,
 				D6D91B982D3457A10090645E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +104,13 @@
 				D6D91BB12D3457A20090645E /* chalkhakUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D6E4F81D2D39CE6E002D0572 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +216,8 @@
 			);
 			mainGroup = D6D91B8E2D3457A10090645E;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D6D91B982D3457A10090645E /* Products */;
 			projectDirPath = "";
@@ -396,8 +419,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"chalkhak/Preview Content\"";
+				DEVELOPMENT_TEAM = 3ZLTB5NLC5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = chalkhak/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -424,8 +449,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"chalkhak/Preview Content\"";
+				DEVELOPMENT_TEAM = 3ZLTB5NLC5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = chalkhak/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
